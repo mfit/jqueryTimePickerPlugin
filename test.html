@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>TimePickerTest</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="timePicker.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+	$(document).ready(function() {
+	    $(".commonclass").tt4TimePicker();
+
+	    //$("#testinput").tt4TimePicker();
+	   // $("#testinput_2nd").tt4TimePicker();
+	});
+//]]>
+</script>    
+<style>
+#util_timepicker_panel { 
+		position:absolute; top:100px; left:100px; z-index:99;
+		background: rgba(235,235,235,0.95);
+		display:none;
+	 }
+#util_timepicker_panel {
+	font-size:0.7em;
+}
+
+#util_timepicker_panel ul {
+	list-style-type:none;
+	padding:0.1em;
+	margin:0.2em 0.3em;
+}
+
+#util_timepicker_panel ul.f1 {
+	float:left;
+}
+#util_timepicker_panel ul.f1:first-child {
+	border-right:1px dotted #888;
+}
+
+#util_timepicker_panel ul.f2 li {
+	float: left;
+    width: 3.5em;
+    padding:0.1em;
+}
+
+#util_timepicker_panel ul.f2 li {
+	color:#888;
+}
+
+#util_timepicker_panel ul.f2 li:first-child {
+	color:#777; font-weight:bold;
+}
+
+#util_timepicker_panel ul ul li {
+	cursor:pointer;
+	border:1px solid transparent;
+}
+
+#util_timepicker_panel ul ul li:hover {
+	border:1px dotted #c90;
+	background:#ccc;
+}
+
+#util_timepicker_panel ul ul li.selected {
+	background:#ccf;
+}
+
+</style>
+</head>
+<body>
+<div>
+<form>
+	<input id="testinput" type="text" name="pickme" class="commonclass"/>
+	<input id="testinput_2nd" type="text" name="pickme2"  class="commonclass"/>
+</form>
+</div>
+</body>
+</html>
